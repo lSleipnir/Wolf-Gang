@@ -1,0 +1,324 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+							/* CSS Here */
+
+@font-face{
+	font-family : 'Bodega';
+	src : url('../fonts/BodegaSans_Black.ttf');
+}
+
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	background: url('../img/bg_body.svg') #444444;
+	background-repeat: repeat;
+	margin-top: 0;
+	line-height: 1.6;
+	color: #444444;
+	font-size: 2.5rem;
+}
+
+.container { 
+	margin: auto;
+	max-width: 1500px;
+	width: 70%;
+}
+
+
+header {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+1,ffffff+50,ffffff+50,45484d+50,333333+50,333333+50,333333+50,333333+100 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #ffffff 0%, #ffffff 1%, #ffffff 50%, #ffffff 50%, #45484d 50%, #333333 50%, #333333 50%, #333333 50%, #333333 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #ffffff 0%,#ffffff 1%,#ffffff 50%,#ffffff 50%,#45484d 50%,#333333 50%,#333333 50%,#333333 50%,#333333 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #ffffff 0%,#ffffff 1%,#ffffff 50%,#ffffff 50%,#45484d 50%,#333333 50%,#333333 50%,#333333 50%,#333333 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#333333',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+header a, nav {
+	display: inline-block;
+	vertical-align: top;
+}
+
+nav ul li {
+	text-align: right;
+	font-size: 2.5rem;
+}
+
+nav ul li a {
+	text-decoration: none;
+}
+
+.container nav {
+	float: right;
+	padding: 20px 0 20px 0;
+}
+
+.clear {
+	clear: both;
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+	font-family: 'Bodega', sans-serif;
+	padding-bottom: 10px;
+}
+
+h1, h2, nav, .connaitre, header a {
+	color: white;
+}
+
+h1 {
+	font-size: 4rem;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 3rem;
+	border-top: 2px solid #3f3f3f;
+	border-left: 2px solid #3f3f3f;
+	padding: 10px 10px 20px 20px;
+}
+
+h3 {
+	font-size: 2.5rem;
+	border-bottom: 2px solid #ff9d00;
+	margin-bottom: 10px;
+}
+
+section {
+	margin-bottom: 30px;
+}
+
+.team {
+	display: inline-block;
+	vertical-align: top;
+	width: 23.5%;
+	background-color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+.team img {
+	width: 100%;
+}
+
+.team:nth-child(3), .team:nth-child(4), .team:nth-child(5) {
+	margin-left: 2%;
+}
+
+.connaitre {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+
+.connaitre p {
+	padding: 0px 10px 10px 10px;
+}
+
+.fab {
+	padding: 30px;
+}
+
+video {
+	width: 100%;
+}
+button {
+	background-color: #ff9d00;
+	border: 2px solid #ff9d00;
+	padding: 6px;
+	margin-top: 20px;
+	width: 100%;
+	color: white;
+	cursor: pointer;
+}
+.color {
+	color: #ff9d00;
+}
+
+#logo div {
+	color: white;
+	display: inline-block;
+}
+
+footer {
+	text-align: center;
+	line-height: 1.4;
+	color: white;
+	border: 2px solid #3f3f3f;
+	box-shadow: 0px -10px 5px 0px #3f3f3f;
+	padding: 40px;
+}
+
+footer a, #logo a {
+	color: white;
+}
+
+footer img {
+	width: 50px;
+}
+
+footer div {
+	text-align: center;
+	width: 80%;
+	margin: auto;
+}
+
+footer h3 {
+	border: none;
+	margin-top: 50px;
+}
+
+footer nav ul li {
+	display: inline-block;
+	padding: 10px;
+}
+
+footer nav {
+	padding: 30px;
+}
+
+
+
+@media screen and (max-width:1024px) {
+	header {
+  		margin: 40px;
+  		padding: 20px;
+  	}
+  	body {
+  		margin-top: 40px;
+  	}
+  	header .container {
+  		width: 100%;
+  	}
+	.team {
+    	display: block;
+    	width: 100%;
+    	margin-top: 20px;
+    	padding: 0;
+  	}
+  	.team:nth-child(3), .team:nth-child(4), .team:nth-child(5) {
+  		margin-left: 0%;
+  	}
+  	.connaitre, #logo {
+  		display: block;
+  		width: 100%;
+  	}
+  	footer {
+  		margin: 40px;
+  	}
+  	#logo div {
+  		display: block;
+ 		width: 100%;
+ 		text-align: center;
+  	}
+}
+
+@media screen and (max-width:767px) {
+	header {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+1,ffffff+50,ffffff+50,45484d+50,333333+50,333333+50,333333+50,333333+100 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #ffffff 0%, #ffffff 1%, #ffffff 50%, #ffffff 50%, #45484d 50%, #333333 50%, #333333 50%, #333333 50%, #333333 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #ffffff 0%,#ffffff 1%,#ffffff 50%,#ffffff 50%,#45484d 50%,#333333 50%,#333333 50%,#333333 50%,#333333 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(160deg, #ffffff 0%,#ffffff 1%,#ffffff 50%,#ffffff 50%,#45484d 50%,#333333 50%,#333333 50%,#333333 50%,#333333 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#333333',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+	header {
+  		margin: 40px;
+  		padding: 20px;
+  	}
+  	body {
+  		margin-top: 40px;
+  	}
+  	header .container {
+  		width: 100%;
+  	}
+	header a, nav {
+		display: block;
+  	}
+  	.team {
+    	display: block;
+    	width: 100%;
+    	margin-top: 20px;
+    	padding: 0;
+  	}
+  	.team:nth-child(3), .team:nth-child(4), .team:nth-child(5) {
+  		margin-left: 0%;
+  	}
+  	.connaitre, #logo {
+  		display: block;
+  		width: 100%;
+ 	}
+  	footer {
+  		margin: 40px;
+  	}
+  	#logo div {
+  		display: block;
+ 		width: 100%;
+ 		text-align: center;
+  	}
+}
+
+
